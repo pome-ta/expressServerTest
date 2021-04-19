@@ -55,3 +55,4 @@ app.get('/', (req, res) => {
 ## 参考
 
 [[Node.js] expressで作るHTTPサーバ – 入門編 その1](https://blog.katsubemakito.net/nodejs/http-server-built-with-express?amp)
+  - 画像もお借りしてる `./images/*.png`
