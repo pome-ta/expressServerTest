@@ -24,7 +24,3 @@ app.get('/images/:file', (req, res) => {
 app.listen(port, () => {
   console.log(`Launching app... http://localhost:${port}` + '\n');
 });
-
-
-
-
