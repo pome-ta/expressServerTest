@@ -1,11 +1,12 @@
 const fs = require('fs');
 const data = 'Hello, Node 😊';
 
-fs.writeFile('file2.txt', data, (err) => {
-  if (err) {
-    console.log(`[error] ${err}`);
-  }
+try {
+  fs.writeFileSync('file1.txt', data);
   console.log('正常に完了');
-});
+}
+catch(e) {
+  console.log(e.message);
+}
 
 console.log('最後まで実行');
