@@ -8,14 +8,10 @@ const port = process.env['WEB_APP_PORT'];
 
 // routing 設定
 app.get('/', (req, res) => {
-  res.sendFile(`${__dirname}/index.html`);
+  const name = req.query.name;
+  // http://localhost:{port}/?name={name}
+  res.send(`君の名は ${name}`);
   console.log('アクセス: /');
-});
-
-app.get('/images/:file', (req, res) => {
-  const file = req.params.file;
-  res.sendFile(`${__dirname}/images/${file}`);
-  console.log('アクセス: /images');
 });
 
 

@@ -52,6 +52,16 @@ app.get('/', (req, res) => {
 ```
 
 
+## image
+
+## GET
+
+1. ブラウザのURL の所をタップ
+1. `?name={name}`
+1. [return]
+1. `{name}` の所が変わる
+
+
 ## 参考
 
 [[Node.js] expressで作るHTTPサーバ – 入門編 その1](https://blog.katsubemakito.net/nodejs/http-server-built-with-express?amp)
