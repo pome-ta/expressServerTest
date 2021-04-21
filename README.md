@@ -66,8 +66,27 @@ app.get('/', (req, res) => {
 Play.js だと、状況によりlocalhost のport が違うが、ハードコードしてる
 
 
+## その2
+
+> PHPでサーバサイドを実装する際には、Webサーバとしての機能はApacheが受け持つパターンが多いわけですが、この場合PHPはリクエストがある度に起動と終了を繰り返します。
+> つまり起動時に前回の処理結果などを気にする必要は基本的にありません。ところがexpressでサーバを作っている場合には1つのプログラムが起動しっぱなしであることを意識する必要があるのです。
+
+
+### アクセスカウンター(メモリ版)を作成
+
+更新すると、カウントアップする
+
+#### グローバル変数の扱い
+
+`/reset` へ飛ぶと、`COUNT = 1;` が呼び出され変数`COUNT` は、`1` に戻る
+
+
+
+
+
 
 ## 参考
 
-[[Node.js] expressで作るHTTPサーバ – 入門編 その1](https://blog.katsubemakito.net/nodejs/http-server-built-with-express?amp)
+- [[Node.js] expressで作るHTTPサーバ – 入門編 その1](https://blog.katsubemakito.net/nodejs/http-server-built-with-express?amp)
   - 画像もお借りしてる `./images/*.png`
+- [[Node.js] expressで作るHTTPサーバ – 入門編 その2「グローバル変数の生存戦略編」](https://blog.katsubemakito.net/nodejs/http-server-built-with-express2?amp)

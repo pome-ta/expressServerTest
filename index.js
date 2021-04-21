@@ -6,15 +6,19 @@ const app = express();
 const port = process.env['WEB_APP_PORT'];
 
 
-// routing 設定
+// カウンタ用データ
+let COUNT = 1;
+
+// routing
 app.get('/', (req, res) => {
-  const data = {
-    "message": "Hello world",
-    "date": "2020-06-29"
-  };
-  res.json(data);
+  res.send(`あなたは、${COUNT}人目のお客様です`);
+  COUNT++;
 });
 
+app.get('/reset', (req, res) => {
+  res.send(`カウンタをリセットしました`);
+  COUNT = 1;
+});
 
 // Launch app
 app.listen(port, () => {
