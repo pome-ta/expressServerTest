@@ -61,6 +61,11 @@ app.get('/', (req, res) => {
 1. [return]
 1. `{name}` の所が変わる
 
+## POST
+
+Play.js だと、状況によりlocalhost のport が違うが、ハードコードしてる
+
+
 
 ## 参考
 
