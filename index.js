@@ -6,26 +6,13 @@ const app = express();
 const port = process.env['WEB_APP_PORT'];
 
 
-
-// POST のクエリをいい感じに処理する
-app.use(express.urlencoded({extended: true}));
-
 // routing 設定
-app.post('/', (req, res) => {
-  const name = req.body.name;
-  // http://localhost:{port}/?name={name}
-  res.send(`君の名は ${name}`);
-  console.log('アクセス: /');
-});
-
 app.get('/', (req, res) => {
-  // memo: どっちの呼び方でも大丈夫だった
-  //res.sendFile('/index.html', { root: __dirname });
-  res.sendFile(`${__dirname}/index.html`);
-  console.log("req ---");
-  console.log({req});
-  console.log("res ---");
-  console.log({res});
+  const data = {
+    "message": "Hello world",
+    "date": "2020-06-29"
+  };
+  res.json(data);
 });
 
 
