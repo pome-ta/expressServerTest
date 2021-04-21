@@ -83,8 +83,6 @@ Play.js だと、状況によりlocalhost のport が違うが、ハードコー
 
 
 
-
-
 ## 参考
 
 - [[Node.js] expressで作るHTTPサーバ – 入門編 その1](https://blog.katsubemakito.net/nodejs/http-server-built-with-express?amp)
