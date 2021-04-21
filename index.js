@@ -1,6 +1,5 @@
 const express = require('express');
 
-
 // Setup
 const app = express();
 const port = process.env['WEB_APP_PORT'];
@@ -19,6 +18,7 @@ app.get('/reset', (req, res) => {
   res.send(`カウンタをリセットしました`);
   COUNT = 1;
 });
+
 
 // Launch app
 app.listen(port, () => {
