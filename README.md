@@ -81,6 +81,11 @@ Play.js だと、状況によりlocalhost のport が違うが、ハードコー
 `/reset` へ飛ぶと、`COUNT = 1;` が呼び出され変数`COUNT` は、`1` に戻る
 
 
+## Node はシングルスレッド
+
+C10k問題 の解決
+
+
 
 
 ## 参考
@@ -88,3 +93,4 @@ Play.js だと、状況によりlocalhost のport が違うが、ハードコー
 - [[Node.js] expressで作るHTTPサーバ – 入門編 その1](https://blog.katsubemakito.net/nodejs/http-server-built-with-express?amp)
   - 画像もお借りしてる `./images/*.png`
 - [[Node.js] expressで作るHTTPサーバ – 入門編 その2「グローバル変数の生存戦略編」](https://blog.katsubemakito.net/nodejs/http-server-built-with-express2?amp)
+- [[Node.js] expressで作るHTTPサーバ – 入門編 その3「非同期処理とファイル」](https://blog.katsubemakito.net/nodejs/http-server-built-with-express3?amp)
